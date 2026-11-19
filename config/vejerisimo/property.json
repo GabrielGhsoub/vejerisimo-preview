@@ -1,0 +1,198 @@
+{
+  "_comment": "Vejerisimo, Vejer de la Frontera. Every fact below was read off vejerisimo.com on 2026-09-03 and nothing is invented. Adapted 2026-11-19 after Guillermo's feedback: he rents one whole house and changes his prices constantly, so this demo runs in request mode, shows no price anywhere (a price line says he confirms it in his reply) and skips the unit step because there is only one thing to book. The observation from our first email still holds: Book Now ends at a Booking Request form that promises a reply in under 12 hours, with no live availability.",
+  "slug": "vejerisimo",
+  "kind": "stay",
+  "realBrand": true,
+  "brand": {
+    "name": "Vejerísimo",
+    "tagline": {
+      "en": "The whole house, yours. Four bedrooms in the heart of Vejer de la Frontera.",
+      "es": "La casa entera, para usted. Cuatro dormitorios en el centro histórico de Vejer.",
+      "fr": "La maison entière, rien que pour vous. Quatre chambres au coeur de Vejer."
+    },
+    "primary": "#1f5f5b",
+    "accent": "#c9a227",
+    "fontPairing": "classic"
+  },
+  "currency": "EUR",
+  "languages": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "bookingMode": "request",
+  "skipUnitStep": true,
+  "depositPercent": 30,
+  "_comment_deposit": "depositPercent stays because the schema requires it. In request mode it is never shown to the guest and no deposit exists. Guillermo publishes no deposit policy.",
+  "images": {
+    "hero": "images/vejerisimo_hero_pc.jpg"
+  },
+  "strings": {
+    "en": {
+      "summary.title": "Your request",
+      "summary.unit": "House",
+      "confirm.requestBody": "Nothing is booked or charged yet. Guillermo will read your request and reply in less than 12 hours with your price.",
+      "policy.title": "Good to know before you send"
+    },
+    "es": {
+      "dates.titleStay": "Elija las fechas de su estancia",
+      "guest.message": "Algo que debamos saber",
+      "summary.title": "Su solicitud",
+      "summary.unit": "Casa",
+      "confirm.requestBody": "Todavía no hay nada reservado ni cobrado. Guillermo leerá su solicitud y le responderá en menos de 12 horas con su precio.",
+      "policy.title": "Antes de enviar"
+    },
+    "fr": {
+      "summary.title": "Votre demande",
+      "summary.unit": "Maison",
+      "confirm.requestBody": "Rien n'est encore réservé ni débité. Guillermo lira votre demande et vous répondra en moins de 12 heures avec votre prix.",
+      "policy.title": "Avant d'envoyer"
+    }
+  },
+  "policy": {
+    "en": "Sending this request books nothing and charges nothing. Guillermo reads every request himself and replies in less than 12 hours, as on vejerisimo.com. Secured parking is included. This is a demonstration: the taken nights in the calendar are examples, and no request is recorded or sent.",
+    "es": "Enviar esta solicitud no reserva ni cobra nada. Guillermo lee cada solicitud personalmente y responde en menos de 12 horas, como en vejerisimo.com. El aparcamiento vigilado está incluido. Esto es una demostración: las noches ocupadas del calendario son ejemplos y ninguna solicitud se registra ni se envía.",
+    "fr": "L'envoi de cette demande ne réserve rien et ne débite rien. Guillermo lit chaque demande lui-même et répond en moins de 12 heures, comme sur vejerisimo.com. Le parking sécurisé est inclus. Ceci est une démonstration: les nuits occupées du calendrier sont des exemples et aucune demande n'est enregistrée ni envoyée."
+  },
+  "priceNote": {
+    "en": "Guillermo confirms your price in his reply. Booking direct is about 10% below Airbnb and Booking.",
+    "es": "Guillermo le confirma el precio en su respuesta. La reserva directa sale alrededor de un 10% por debajo de Airbnb y Booking.",
+    "fr": "Guillermo vous confirme le prix dans sa réponse. La réservation directe revient environ 10% moins cher qu'Airbnb et Booking."
+  },
+  "extraQuestions": [
+    {
+      "id": "children",
+      "label": {
+        "en": "Children in the group",
+        "es": "Niños en el grupo",
+        "fr": "Enfants dans le groupe"
+      },
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "id": "none",
+          "label": {
+            "en": "None",
+            "es": "Ninguno",
+            "fr": "Aucun"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "1",
+            "es": "1",
+            "fr": "1"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "2",
+            "es": "2",
+            "fr": "2"
+          }
+        },
+        {
+          "id": "3",
+          "label": {
+            "en": "3",
+            "es": "3",
+            "fr": "3"
+          }
+        },
+        {
+          "id": "four-plus",
+          "label": {
+            "en": "4 or more",
+            "es": "4 o más",
+            "fr": "4 ou plus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "seen-price",
+      "label": {
+        "en": "A price you saw on Airbnb or Booking for these dates",
+        "es": "Un precio que haya visto en Airbnb o Booking para estas fechas",
+        "fr": "Un prix vu sur Airbnb ou Booking pour ces dates"
+      },
+      "type": "text",
+      "required": false,
+      "hint": {
+        "en": "Optional. It helps Guillermo answer with the direct price straight away.",
+        "es": "Opcional. Ayuda a Guillermo a responderle enseguida con el precio de reserva directa.",
+        "fr": "Facultatif. Cela aide Guillermo à vous répondre tout de suite avec le prix en direct."
+      }
+    }
+  ],
+  "blockedDates": [
+    "2026-12-04",
+    "2026-12-05",
+    "2026-12-06",
+    "2026-12-27",
+    "2026-12-28",
+    "2026-12-29",
+    "2026-12-30",
+    "2026-12-31",
+    "2027-01-01",
+    "2027-01-02",
+    "2027-02-13",
+    "2027-02-14",
+    "2027-02-15",
+    "2027-03-26",
+    "2027-03-27",
+    "2027-03-28",
+    "2027-03-29",
+    "2027-05-01",
+    "2027-05-02",
+    "2027-05-03",
+    "2027-07-10",
+    "2027-07-11",
+    "2027-07-12",
+    "2027-07-13",
+    "2027-07-14",
+    "2027-07-15",
+    "2027-07-16",
+    "2027-07-17",
+    "2027-08-07",
+    "2027-08-08",
+    "2027-08-09",
+    "2027-08-10",
+    "2027-08-11",
+    "2027-08-12",
+    "2027-08-13",
+    "2027-08-14",
+    "2027-08-15",
+    "2027-08-16",
+    "2027-08-17",
+    "2027-08-18",
+    "2027-08-19",
+    "2027-08-20",
+    "2027-08-21"
+  ],
+  "_comment_blocked": "Illustrative future nights (set 2026-11-19), so the calendar visibly has free and taken nights. They are examples, not Guillermo's real calendar. In a real build the taken nights come from his Airbnb and Booking iCal links.",
+  "units": [
+    {
+      "id": "casa-entera",
+      "name": {
+        "en": "The whole house",
+        "es": "La casa entera",
+        "fr": "La maison entière"
+      },
+      "description": {
+        "en": "A former boutique hotel, now exclusively yours. Four double rooms around an open patio, four private bathrooms, a fully equipped kitchen, a traditional patio with library and two terraces with views over the old town. 150 square metres, sleeps eight, secured parking included at 150 metres.",
+        "es": "Un antiguo hotel boutique, ahora en exclusiva para usted. Cuatro habitaciones dobles alrededor de un patio abierto, cuatro baños privados, cocina totalmente equipada, patio tradicional con biblioteca y dos terrazas con vistas al casco antiguo. 150 metros cuadrados, hasta ocho personas, aparcamiento vigilado incluido a 150 metros.",
+        "fr": "Un ancien hôtel de charme, désormais rien que pour vous. Quatre chambres doubles autour d'un patio ouvert, quatre salles de bain privées, une cuisine entièrement équipée, un patio traditionnel avec bibliothèque et deux terrasses avec vue sur la vieille ville. 150 mètres carrés, jusqu'à huit personnes, parking sécurisé inclus à 150 mètres."
+      },
+      "image": "images/gallery-new-1.jpg",
+      "capacity": 8,
+      "basePrice": 200,
+      "priceUnit": "perNight",
+      "_comment_price": "basePrice is kept only because the schema requires it. No amount is shown anywhere: priceNote replaces every figure and Guillermo confirms the price in his reply, since he changes his prices constantly."
+    }
+  ],
+  "options": []
+}
